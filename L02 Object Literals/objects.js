@@ -1,4 +1,4 @@
-var userOne = {
+let userOne = {
     email: 'klinton.jp@gmail.com',
     name: 'Klinton',
     login(){
