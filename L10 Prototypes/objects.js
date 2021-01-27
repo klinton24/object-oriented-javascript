@@ -1,12 +1,17 @@
-
 function User(email, name) {
     this.email = email;
     this.name = name;
     this.online = false;
-    this.login = function(){
-        console.log(this.email, 'has logged in.');
-        this.online = true;
-    }
+}
+
+User.prototype.login = function(){
+    console.log(this.email, 'has logged in.');
+    this.online = true;
+}
+
+User.prototype.logout = function(){
+    console.log(this.email, 'has logged out.');
+    this.online = false;
 }
 
 let userOne = new User('yoshi@mario.com', 'Yoshi');
